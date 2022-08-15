@@ -4,7 +4,7 @@
   align-items: center;
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.9),
       rgba(255, 255, 255, 0)
     ),
     url("https://free4kwallpapers.com/uploads/originals/2021/10/20/squid-game-wallpaper.jpg")
@@ -37,6 +37,12 @@
   font-size: 1rem;
   padding: 12px 0;
   width: 130px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.movie button:hover {
+  opacity: 0.8;
 }
 
 .movie button:first-child {
