@@ -1,0 +1,36 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black);
+  padding: 15px 30px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 120px;
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav__wrapper--icon {
+  font-size: calc(22 / 16 * 1rem);
+  margin: 0 20px;
+}
+
+.nav__wrapper--icon:first-child {
+  font-size: calc(20 / 16 * 1rem);
+}
+
+.avatar {
+  width: 100%;
+  max-width: 40px;
+  margin-left: 20px;
+}
+
+input {
+  transition: all 0.3s ease;
+}
