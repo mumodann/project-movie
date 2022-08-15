@@ -1,0 +1,53 @@
+.showcase {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(255, 255, 255, 0)
+    ),
+    url("https://free4kwallpapers.com/uploads/originals/2021/10/20/squid-game-wallpaper.jpg")
+      no-repeat center center/cover;
+}
+
+.movie {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie__title {
+  line-height: 1.5;
+  font-size: calc(50 / 16 * 1rem);
+}
+
+.movie__summary {
+  max-width: 800px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.699);
+  font-size: calc(20 / 16 * 1rem);
+  margin-bottom: 20px;
+}
+
+.movie button {
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px 0;
+  width: 130px;
+}
+
+.movie button:first-child {
+  margin-right: 15px;
+}
+
+.movie button:first-child .icon {
+  font-size: calc(14 / 16 * 1rem);
+}
+
+.movie button:nth-child(2) {
+  color: var(--white);
+  background: var(--see-thru);
+}

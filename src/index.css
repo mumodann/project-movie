@@ -4,8 +4,8 @@
 
 :root {
   --white: #fff;
-  --black: #141414;
-  --light-grey: #999787;
+  --black: #111111;
+  --light-grey: #999999;
   --see-thru: rgba(109, 109, 109, 0.7);
   --green: #53d84b;
 }
@@ -18,6 +18,6 @@
 }
 
 body {
-  height: 400vh;
+  background-color: var(--black);
   color: var(--white);
 }
