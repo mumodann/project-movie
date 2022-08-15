@@ -1,9 +1,10 @@
-import { Navbar } from "./Components";
+import { Navbar, ShowCase } from "./Components";
 
 function App() {
   return (
     <>
       <Navbar />
+      <ShowCase />
     </>
   );
 }
