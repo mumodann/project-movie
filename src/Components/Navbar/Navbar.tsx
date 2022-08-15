@@ -1,38 +1,21 @@
-export function Navbar() {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import "/src/style/Navbar.css";
+
+export function Navbar(): JSX.Element {
   return (
-    <nav>
-      <img src="/src/image/Netflix.svg" alt="Netflix logo" />
+    <nav className="nav">
+      <img src="/src/image/Netflix.svg" alt="Netflix logo" className="logo" />
 
-      <ul>
-        <li>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-        </li>
-        <li>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
-          </svg>
-        </li>
+      <aside className="nav__wrapper">
+        <FontAwesomeIcon
+          icon={faMagnifyingGlass}
+          className="nav__wrapper--icon"
+        />
+        <FontAwesomeIcon icon={faBell} className="nav__wrapper--icon" />
 
-        <img src="/src/image/avatar.png" alt="Avatar" />
-      </ul>
+        <img src="/src/image/avatar.png" alt="Avatar" className="avatar" />
+      </aside>
     </nav>
   );
 }
