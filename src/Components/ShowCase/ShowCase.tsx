@@ -1,6 +1,6 @@
-import "/src/style/ShowCase.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { IoVolumeMediumOutline, IoVolumeOffOutline } from "react-icons/io5";
 import "/src/style/ShowCase.css";
 
 export function ShowCase() {
@@ -10,6 +10,9 @@ export function ShowCase() {
         <video controls autoPlay loop id="myVideo">
           <source src="/src/Components/Assets/video/trailer.mp4" />
         </video>
+        <button className="mute">
+          <IoVolumeMediumOutline />
+        </button>
       </div>
       <article className="movie">
         <h1 className="movie__title">The Lion King </h1>
@@ -22,7 +25,6 @@ export function ShowCase() {
         </p>
         <div className="movie__wrapper">
           <button aria-label="Play">
-            {" "}
             <FontAwesomeIcon icon={faPlay} className="icon" />
             &nbsp; Play
           </button>
