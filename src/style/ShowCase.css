@@ -1,14 +1,14 @@
 .showcase {
-  height: 90vh;
   display: flex;
   align-items: center;
+  height: 90vh;
   background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.9),
       rgba(255, 255, 255, 0)
     ),
-    url("https://free4kwallpapers.com/uploads/originals/2021/10/20/squid-game-wallpaper.jpg")
-      no-repeat center center/cover;
+    url("https://images6.alphacoders.com/119/1191374.jpg") no-repeat center
+      center/cover;
 }
 
 .movie {
