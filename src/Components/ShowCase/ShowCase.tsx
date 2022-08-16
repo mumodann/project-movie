@@ -6,17 +6,19 @@ import "/src/style/ShowCase.css";
 export function ShowCase() {
   return (
     <div className="showcase">
-      <video autoPlay muted loop id="myVideo">
-        <source src="/src/video/trailer.mov" />
-      </video>
-
+      <div className="wrapper">
+        <video controls autoPlay loop id="myVideo">
+          <source src="/src/Components/Assets/video/trailer.mp4" />
+        </video>
+      </div>
       <article className="movie">
-        <h1 className="movie__title">Squid Game</h1>
+        <h1 className="movie__title">The Lion King </h1>
         <p className="movie__summary">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
-          voluptates doloribus, commodi voluptate tempore facere eligendi
-          reprehenderit impedit molestiae! Excepturi suscipit voluptatibus esse
-          vitae illum, quo eius perferendis soluta,
+          Simba idolizes his father, King Mufasa, and takes to heart his own
+          royal destiny. But not everyone in the kingdom celebrates the new
+          cub's arrival. Scar, Mufasa's brother and former heir to the throne
+          has plans of his own. The battle for Pride Rock is ravaged with
+          betrayal, tragedy and drama, ultimately resulting in Simba's exile.
         </p>
         <div className="movie__wrapper">
           <button aria-label="Play">
