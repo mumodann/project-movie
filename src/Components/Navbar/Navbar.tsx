@@ -7,7 +7,7 @@ export function Navbar(): JSX.Element {
   const [navbar, setNavbar] = useState(false);
 
   const changeBac = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 50) {
       setNavbar(true);
     } else {
       setNavbar(false);
