@@ -3,8 +3,31 @@
 }
 
 .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100vw;
   height: 90vh;
+}
+
+.mute {
+  bottom: 30px;
+  right: 30px;
+  position: absolute;
+  background: transparent;
+  color: var(--white);
+  display: flex;
+  font-size: calc(30 / 16 * 1rem);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  border: var(--white) 1px solid;
+  transition: all 0.3s ease;
+}
+
+.mute:hover {
+  background: rgba(255, 255, 255, 0.103);
 }
 
 #myVideo {
