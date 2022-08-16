@@ -17,7 +17,11 @@ export function Navbar(): JSX.Element {
   window.addEventListener("scroll", changeBac);
   return (
     <nav className={navbar ? "nav active" : "nav"}>
-      <img src="/src/image/Netflix.svg" alt="Netflix logo" className="logo" />
+      <img
+        src="/src/Components/Assets/image/Netflix.svg"
+        alt="Netflix logo"
+        className="logo"
+      />
 
       <aside className="nav__wrapper">
         <FontAwesomeIcon
@@ -26,7 +30,11 @@ export function Navbar(): JSX.Element {
         />
         <FontAwesomeIcon icon={faBell} className="nav__wrapper--icon" />
 
-        <img src="/src/image/avatar.png" alt="Avatar" className="avatar" />
+        <img
+          src="/src/Components/Assets/image/avatar.png"
+          alt="Avatar"
+          className="avatar"
+        />
       </aside>
     </nav>
   );

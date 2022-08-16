@@ -6,6 +6,10 @@ import "/src/style/ShowCase.css";
 export function ShowCase() {
   return (
     <div className="showcase">
+      <video autoPlay muted loop id="myVideo">
+        <source src="/src/video/trailer.mov" />
+      </video>
+
       <article className="movie">
         <h1 className="movie__title">Squid Game</h1>
         <p className="movie__summary">
