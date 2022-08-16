@@ -1,7 +1,35 @@
+.showcase {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 90vh;
+}
+
+#myVideo {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+video::-webkit-media-controls {
+  cursor: default;
+  opacity: 0;
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-current-time-display {
+  cursor: default;
+}
+
 .movie {
+  position: absolute;
+  top: 30%;
   margin-left: 30px;
-  display: flex;
-  flex-direction: column;
 }
 
 .movie__title {
@@ -10,7 +38,7 @@
 }
 
 .movie__summary {
-  max-width: 800px;
+  max-width: 900px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.699);
   font-size: calc(20 / 16 * 1rem);
