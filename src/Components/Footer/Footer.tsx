@@ -10,6 +10,7 @@ export function Footer() {
     >
       © 2022 Build by{" "}
       <a
+        target="_blank"
         href="https://github.com/mirayatech"
         style={{
           color: "white",
