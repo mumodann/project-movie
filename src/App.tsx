@@ -1,4 +1,4 @@
-import { Navbar, RowContainer, ShowCase } from "./Components";
+import { Navbar, RowContainer, ShowCase, Footer } from "./Components";
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <Navbar />
       <ShowCase />
       <RowContainer />
+      <Footer />
     </>
   );
 }
