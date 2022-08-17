@@ -11,7 +11,14 @@
   height: 90vh;
 }
 
-.mute {
+.mute__button:hover {
+  background: rgba(255, 255, 255, 0.103);
+}
+
+.mute__button {
+  z-index: 200;
+  position: absolute;
+  display: flex;
   bottom: 30px;
   right: 30px;
   position: absolute;
@@ -26,27 +33,10 @@
   transition: all 0.3s ease;
 }
 
-.mute:hover {
-  background: rgba(255, 255, 255, 0.103);
-}
-
 #myVideo {
   object-fit: cover;
   height: 100%;
   width: 100%;
-}
-
-video::-webkit-media-controls {
-  cursor: default;
-  opacity: 0;
-}
-
-video::-webkit-media-controls-play-button,
-video::-webkit-media-controls-volume-slider,
-video::-webkit-media-controls-mute-button,
-video::-webkit-media-controls-timeline,
-video::-webkit-media-controls-current-time-display {
-  cursor: default;
 }
 
 .movie {
