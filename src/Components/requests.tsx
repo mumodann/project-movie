@@ -1,4 +1,4 @@
-const requests = {
+export const requests = {
   requestPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${
     import.meta.env.VITE_MOVIE_API
   }&language=en-US&page=1`,
@@ -21,5 +21,3 @@ const requests = {
     import.meta.env.VITE_MOVIE_API
   }&with_genres=10749`,
 };
-
-export default requests;
