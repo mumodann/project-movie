@@ -1,0 +1,85 @@
+.row__title {
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 50px 0 10px 30px;
+  font-size: calc(24 / 16 * 1rem);
+}
+
+.row__title.netflix {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 30px 0 15px 30px;
+  font-size: calc(24 / 16 * 1rem);
+}
+
+.movies__wrapper:hover button {
+  align-items: center;
+  display: flex;
+  z-index: 100;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.397);
+  color: var(--white);
+  height: 100%;
+  padding: 10px;
+  font-size: calc(40 / 16 * 1rem);
+}
+
+.movies__wrapper {
+  margin: 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.movies__wrapper .slider {
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  display: flex;
+}
+
+.movies__wrapper .slider img {
+  width: 150px;
+  margin: 0 5px;
+}
+
+.movies__wrapper button {
+  border: none;
+  z-index: 100;
+  cursor: pointer;
+  background: none;
+  color: transparent;
+  height: 100%;
+  padding: 0;
+  font-size: calc(40 / 16 * 1rem);
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.movies__wrapper .scroll__btn--right {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+
+.movies__wrapper .scroll__btn--left {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+}
+
+/* .movies__wrapper button:hover {
+  align-items: center;
+  display: flex;
+  z-index: 100;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.397);
+  color: var(--white);
+  height: 100%;
+  padding: 10px;
+  font-size: calc(40 / 16 * 1rem);
+} */
+
+::-webkit-scrollbar {
+  display: none;
+}
