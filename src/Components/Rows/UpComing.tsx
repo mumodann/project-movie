@@ -7,6 +7,7 @@ type UpComingProps = {
 };
 
 export function UpComing({ title, fetchURL }: UpComingProps) {
+  const sliderRef = useRef(null);
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -19,14 +20,23 @@ export function UpComing({ title, fetchURL }: UpComingProps) {
       });
   }, []);
 
+  const slideLeft = () => {
+    let slider = sliderRef.current;
+    slider.scrollLeft = slider.scrollLeft - 500;
+  };
+  const slideRight = () => {
+    let slider = sliderRef.current;
+    slider.scrollLeft = slider.scrollLeft + 500;
+  };
+
   return (
     <>
       <h2 className="row__title">{title}</h2>
       <div className="movies__wrapper">
-        <button className="scroll__btn--left">
+        <button onClick={slideLeft} className="scroll__btn--left">
           <HiChevronLeft />{" "}
         </button>
-        <div className="slider">
+        <div className="slider" ref={sliderRef}>
           {movies.map((item, id) => (
             <img
               src={`https://image.tmdb.org/t/p/w500${item?.poster_path}`}
@@ -36,7 +46,7 @@ export function UpComing({ title, fetchURL }: UpComingProps) {
           ))}
         </div>
 
-        <button className="scroll__btn--right">
+        <button onClick={slideRight} className="scroll__btn--right">
           <HiChevronRight />
         </button>
       </div>
