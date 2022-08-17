@@ -7,7 +7,6 @@ type RomanceProps = {
 };
 
 export function Romance({ title, fetchURL }: RomanceProps) {
-  const sliderRef = useRef();
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -20,23 +19,14 @@ export function Romance({ title, fetchURL }: RomanceProps) {
       });
   }, []);
 
-  const slideLeft = () => {
-    let slider = sliderRef.current;
-    slider.scrollLeft = slider.scrollLeft - 500;
-  };
-  const slideRight = () => {
-    let slider = sliderRef.current;
-    slider.scrollLeft = slider.scrollLeft + 500;
-  };
-
   return (
     <>
       <h2 className="row__title">{title}</h2>
       <div className="movies__wrapper">
-        <button onClick={slideLeft} className="scroll__btn--left">
+        <button className="scroll__btn--left">
           <HiChevronLeft />{" "}
         </button>
-        <div className="slider" ref={sliderRef}>
+        <div className="slider">
           {movies.map((item, id) => (
             <img
               src={`https://image.tmdb.org/t/p/w500${item?.poster_path}`}
@@ -46,7 +36,7 @@ export function Romance({ title, fetchURL }: RomanceProps) {
           ))}
         </div>
 
-        <button onClick={slideRight} className="scroll__btn--right">
+        <button className="scroll__btn--right">
           <HiChevronRight />
         </button>
       </div>
