@@ -1,18 +1,34 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { IoVolumeMediumOutline, IoVolumeOffOutline } from "react-icons/io5";
 import "/src/style/ShowCase.css";
+import ReactPlayer from "react-player";
 
 export function ShowCase() {
+  const [isMuted, setIsMuted] = useState(true);
   return (
     <div className="showcase">
       <div className="wrapper">
-        <video controls autoPlay loop id="myVideo">
-          <source src="/src/Components/Assets/video/trailer.mp4" />
-        </video>
-        <button className="mute">
-          <IoVolumeMediumOutline />
-        </button>
+        <ReactPlayer
+          playing={true}
+          loop={true}
+          volume={1}
+          muted={isMuted}
+          className="video"
+          width="100%"
+          height="100%"
+          url="/src/Components/Assets/video/trailer.mp4"
+        />
+        {isMuted ? (
+          <button onClick={() => setIsMuted(false)} className="mute__button">
+            <IoVolumeOffOutline />
+          </button>
+        ) : (
+          <button onClick={() => setIsMuted(true)} className="mute__button">
+            <IoVolumeMediumOutline />
+          </button>
+        )}
       </div>
       <article className="movie">
         <h1 className="movie__title">The Lion King </h1>
