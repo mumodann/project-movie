@@ -1,8 +1,9 @@
-.showcase {
+.Banner {
   overflow: hidden;
 }
 
-.wrapper {
+.banner__wrapper {
+  background: var(--black);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -33,24 +34,24 @@
   transition: all 0.3s ease;
 }
 
-#myVideo {
+.trailer__video {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-.movie {
+.trailer__info {
   position: absolute;
   top: 30%;
   margin-left: 30px;
 }
 
-.movie__title {
+.trailer__title {
   line-height: 1.5;
   font-size: calc(50 / 16 * 1rem);
 }
 
-.movie__summary {
+.trailer__overview {
   max-width: 900px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.699);
@@ -58,7 +59,7 @@
   margin-bottom: 20px;
 }
 
-.movie button {
+.container__button {
   border: none;
   border-radius: 4px;
   font-weight: 700;
@@ -66,22 +67,21 @@
   padding: 12px 0;
   width: 130px;
   transition: all 0.2s ease;
-  cursor: pointer;
 }
 
-.movie button:hover {
+.container__button:hover {
   opacity: 0.8;
 }
 
-.movie button:first-child {
+.container__button:first-child {
   margin-right: 15px;
 }
 
-.movie button:first-child .icon {
+.container__button:first-child .icon {
   font-size: calc(14 / 16 * 1rem);
 }
 
-.movie button:nth-child(2) {
+.container__button:nth-child(2) {
   color: var(--white);
   background: var(--see-thru);
 }

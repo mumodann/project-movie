@@ -5,7 +5,7 @@ import { IoVolumeMediumOutline, IoVolumeOffOutline } from "react-icons/io5";
 import "/src/style/ShowCase.css";
 import ReactPlayer from "react-player";
 
-export function ShowCase(): JSX.Element {
+export function Banner(): JSX.Element {
   const [isMuted, setIsMuted] = useState(true);
   return (
     <div className="banner">
