@@ -1,4 +1,4 @@
 export { Navbar } from "./Navbar/Navbar";
-export { ShowCase } from "./ShowCase/ShowCase";
+export { Banner } from "./Banner/Banner";
 export { RowContainer } from "./Rows/RowContainer/RowContainer";
 export { Footer } from "./Footer/Footer";
