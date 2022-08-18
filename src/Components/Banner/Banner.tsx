@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { IoVolumeMediumOutline, IoVolumeOffOutline } from "react-icons/io5";
-import "/src/style/ShowCase.css";
+import "/src/style/Banner.css";
 import ReactPlayer from "react-player";
 
 export function Banner(): JSX.Element {
