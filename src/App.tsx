@@ -1,10 +1,10 @@
-import { Navbar, RowContainer, ShowCase, Footer } from "./Components";
+import { Navbar, RowContainer, Banner, Footer } from "./Components";
 
 function App() {
   return (
     <>
       <Navbar />
-      <ShowCase />
+      <Banner />
       <RowContainer />
       <Footer />
     </>
