@@ -13,9 +13,13 @@
   background-color: var(--black);
 }
 
-.logo {
+.nav__logo {
   width: 100%;
   max-width: 100px;
+}
+
+.nav__log--mobile {
+  display: none;
 }
 
 .nav__wrapper {
@@ -23,16 +27,16 @@
   align-items: center;
 }
 
-.nav__wrapper--icon {
+.wrapper__icon {
   font-size: calc(20 / 16 * 1rem);
   margin: 0 20px;
 }
 
-.nav__wrapper--icon:first-child {
+.wrapper__icon:first-child {
   font-size: calc(18 / 16 * 1rem);
 }
 
-.avatar {
+.wrapper__avatar {
   width: 100%;
   max-width: 35px;
   margin-left: 20px;
