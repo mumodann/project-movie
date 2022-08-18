@@ -1,19 +1,26 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.RowContainer {
+  background: var(--black);
+}
 .row__title {
   letter-spacing: 1px;
   font-weight: 500;
-  margin: 50px 0 10px 30px;
+  padding: 50px 0 10px 30px;
   font-size: calc(24 / 16 * 1rem);
 }
 
-.row__title.netflix {
+.row__title.Netflix {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 500;
-  margin: 30px 0 15px 30px;
+  padding: 30px 0 15px 30px;
   font-size: calc(24 / 16 * 1rem);
 }
 
-.movies__wrapper:hover button {
+.movie__container:hover .scroll__button {
   align-items: center;
   display: flex;
   z-index: 100;
@@ -25,25 +32,20 @@
   font-size: calc(40 / 16 * 1rem);
 }
 
-.movies__wrapper {
+.movie__container {
   margin: 0 30px;
   position: relative;
   overflow: hidden;
 }
 
-.movies__wrapper .slider {
+.movie__container .slider {
   position: relative;
   scroll-behavior: smooth;
   overflow-y: auto;
   display: flex;
 }
 
-.movies__wrapper .slider img {
-  width: 150px;
-  margin: 0 5px;
-}
-
-.movies__wrapper button {
+.movie__container .scroll__button {
   border: none;
   z-index: 100;
   cursor: pointer;
@@ -56,30 +58,75 @@
   transition: all 0.3s ease;
 }
 
-.movies__wrapper .scroll__btn--right {
+.movie__container .scroll__right {
   bottom: 0;
   position: absolute;
   right: 0;
 }
 
-.movies__wrapper .scroll__btn--left {
+.movie__container .scroll__left {
   bottom: 0;
   position: absolute;
   left: 0;
 }
 
-/* .movies__wrapper button:hover {
-  align-items: center;
-  display: flex;
-  z-index: 100;
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.397);
-  color: var(--white);
-  height: 100%;
-  padding: 10px;
-  font-size: calc(40 / 16 * 1rem);
-} */
+.card__poster {
+  width: 300px;
+  margin: 0 5px;
+  object-fit: cover;
+}
 
-::-webkit-scrollbar {
-  display: none;
+.movie__info {
+  display: flex;
+  padding: 10px;
+  margin: 0 5px;
+
+  flex-direction: column;
+  background-color: #181818;
+}
+
+.movie__info .movie__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie__info .movie__controls .movie__icons * {
+  margin: 1px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #7c7c7c;
+  font-size: calc(40 / 16 * 1rem);
+  background-color: #201f1f;
+  transition: all 0.3s ease;
+}
+
+.movie__controls .movie__info--button {
+  display: flex;
+  margin: 1px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  border: 2px solid #7c7c7c;
+  color: var(--white);
+  font-size: calc(20 / 16 * 1rem);
+  background-color: #201f1f;
+  transition: all 0.3s ease;
+}
+
+.movie__info .movie__controls .movie__icons *:hover,
+.movie__controls .movie__info--button:hover {
+  border: 2px solid var(--white);
+}
+
+.movie__info .movie__title {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.movie__info .movie__rate {
+  color: var(--green);
+  font-weight: 600;
+  font-size: 0.8rem;
 }
