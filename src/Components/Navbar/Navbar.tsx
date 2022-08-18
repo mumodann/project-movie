@@ -6,7 +6,7 @@ import { useState } from "react";
 export function Navbar(): JSX.Element {
   const [navbar, setNavbar] = useState(false);
 
-  const changeBac = () => {
+  const changeBackground = () => {
     if (window.scrollY >= 50) {
       setNavbar(true);
     } else {
@@ -14,26 +14,32 @@ export function Navbar(): JSX.Element {
     }
   };
 
-  window.addEventListener("scroll", changeBac);
+  window.addEventListener("scroll", changeBackground);
   return (
     <nav className={navbar ? "nav active" : "nav"}>
       <img
+        tabIndex={1}
         src="/src/Components/Assets/image/Netflix.svg"
         alt="Netflix logo"
-        className="logo"
+        className="nav__logo"
+      />
+
+      <img
+        tabIndex={1}
+        src="/src/Components/Assets/image/logo.png"
+        alt="Netflix mobile logo"
+        className="nav__log--mobile"
       />
 
       <aside className="nav__wrapper">
-        <FontAwesomeIcon
-          icon={faMagnifyingGlass}
-          className="nav__wrapper--icon"
-        />
-        <FontAwesomeIcon icon={faBell} className="nav__wrapper--icon" />
+        <FontAwesomeIcon icon={faMagnifyingGlass} className="wrapper__icon" />
+        <FontAwesomeIcon icon={faBell} className="wrapper__icon" />
 
         <img
+          tabIndex={1}
           src="/src/Components/Assets/image/avatar.png"
           alt="Avatar"
-          className="avatar"
+          className="wrapper__avatar"
         />
       </aside>
     </nav>
