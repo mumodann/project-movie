@@ -1,25 +1,25 @@
-import { Action } from "../Action";
-import { Comedy } from "../Comedy";
-import { Horror } from "../Horror";
-import { NetflixOriginals } from "../NetflixOriginals";
-import { Romance } from "../Romance";
-import { TopRated } from "../TopRated";
-import { requests } from "../../requests";
-import { UpComing } from "../UpComing";
+import { NetflixOriginals } from "../NetflixOriginal/NetflixOriginals";
+import { Requests } from "../../Requests/Requests";
+import { Action } from "../Action/Action";
+import { Comedy } from "../Comedy/Comedy";
+import { Horror } from "../Horror/Horror";
+import { Romance } from "../Romance/Romance";
+import { TopRated } from "../TopRated/TopRated";
+import { UpComing } from "../UpComing/UpComing";
 
 export function RowContainer() {
   return (
     <div className="RowContainer">
       <NetflixOriginals
         title="Netflix Original"
-        fetchURL={requests.requestPopular}
-      />
-      <TopRated title="Top Rated" fetchURL={requests.requestTopRated} />
-      <UpComing title="Up Coming" fetchURL={requests.requestUpComing} />
-      <Action title="Action" fetchURL={requests.requestAction} />
-      <Comedy title="Comedy" fetchURL={requests.requestComedy} />
-      <Romance title="Romance" fetchURL={requests.requestRomance} />
-      <Horror title="Horror" fetchURL={requests.requestHorror} />
+        fetchURL={Requests.requestPopular}
+      />{" "}
+      <TopRated title="Top Rated" fetchURL={Requests.requestTopRated} />{" "}
+      <UpComing title="Up Coming" fetchURL={Requests.requestUpComing} />
+      <Romance title="Romance" fetchURL={Requests.requestRomance} />
+      <Comedy title="Comedies" fetchURL={Requests.requestComedy} />
+      <Action title="Action" fetchURL={Requests.requestAction} />{" "}
+      <Horror title="Horror" fetchURL={Requests.requestHorror} />
     </div>
   );
 }
