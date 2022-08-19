@@ -1,15 +1,6 @@
 .Banner {
   overflow: hidden;
-}
-
-.banner__wrapper {
-  background: var(--black);
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  height: 90vh;
 }
 
 .mute__button:hover {
@@ -42,7 +33,7 @@
 
 .trailer__info {
   position: absolute;
-  top: 30%;
+  top: 40%;
   margin-left: 30px;
 }
 

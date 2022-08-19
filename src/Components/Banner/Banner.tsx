@@ -9,27 +9,25 @@ export function Banner(): JSX.Element {
   const [isMuted, setIsMuted] = useState(true);
   return (
     <div className="banner">
-      <div className="banner__wrapper">
-        <ReactPlayer
-          playing={true}
-          loop={true}
-          volume={1}
-          muted={isMuted}
-          className="trailer__video"
-          width="100%"
-          height="100%"
-          url="/src/Components/Assets/video/trailer.mp4"
-        />
-        {isMuted ? (
-          <button onClick={() => setIsMuted(false)} className="mute__button">
-            <IoVolumeOffOutline />
-          </button>
-        ) : (
-          <button onClick={() => setIsMuted(true)} className="mute__button">
-            <IoVolumeMediumOutline />
-          </button>
-        )}
-      </div>
+      <ReactPlayer
+        playing={true}
+        loop={true}
+        volume={1}
+        muted={isMuted}
+        className="trailer__video"
+        width="100%"
+        height="100%"
+        url="/src/Components/Assets/video/trailer.mp4"
+      />
+      {isMuted ? (
+        <button onClick={() => setIsMuted(false)} className="mute__button">
+          <IoVolumeOffOutline />
+        </button>
+      ) : (
+        <button onClick={() => setIsMuted(true)} className="mute__button">
+          <IoVolumeMediumOutline />
+        </button>
+      )}
       <article className="trailer__info">
         <h1 className="trailer__title">The Lion King </h1>
         <p className="trailer__overview">
