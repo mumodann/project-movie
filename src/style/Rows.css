@@ -2,13 +2,10 @@
   display: none;
 }
 
-.RowContainer {
-  background: var(--black);
-}
 .row__title {
   letter-spacing: 1px;
   font-weight: 500;
-  padding: 50px 0 10px 30px;
+  padding: 50px 30px 10px 30px;
   font-size: calc(24 / 16 * 1rem);
 }
 
@@ -27,13 +24,12 @@
   cursor: pointer;
   background: rgba(0, 0, 0, 0.397);
   color: var(--white);
-  height: 100%;
   padding: 10px;
   font-size: calc(40 / 16 * 1rem);
 }
 
 .movie__container {
-  margin: 0 30px;
+  margin: 0 25px;
   position: relative;
   overflow: hidden;
 }
@@ -43,6 +39,7 @@
   scroll-behavior: smooth;
   overflow-y: auto;
   display: flex;
+  overflow: hidden;
 }
 
 .movie__container .scroll__button {
@@ -70,63 +67,118 @@
   left: 0;
 }
 
-.card__poster {
-  width: 300px;
+/* CARD */
+.card {
   margin: 0 5px;
-  object-fit: cover;
 }
 
-.movie__info {
+.card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.431);
+}
+
+.card:hover .movie__info {
+  opacity: 1;
+}
+
+.card:hover .card__poster {
+  border-radius: 10px;
+}
+
+.card__poster {
+  width: 400px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.card .movie__info {
+  opacity: 0;
   display: flex;
   padding: 10px;
-  margin: 0 5px;
-
+  margin: -50px 0;
+  border-radius: 0 0 10px 10px;
+  transform: translateY(-50px);
   flex-direction: column;
-  background-color: #181818;
+  background: #181818;
+  transition: all 0.3s ease;
 }
 
-.movie__info .movie__controls {
+.card .movie__info .movie__controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.movie__info .movie__controls .movie__icons * {
+.card .movie__info .movie__controls .movie__icons * {
   margin: 1px;
   cursor: pointer;
   padding: 10px;
   border-radius: 50%;
-  border: 2px solid #7c7c7c;
+  border: 2px solid #8e8e8e;
   font-size: calc(40 / 16 * 1rem);
   background-color: #201f1f;
   transition: all 0.3s ease;
 }
 
-.movie__controls .movie__info--button {
+.card .movie__controls .movie__info--button {
   display: flex;
   margin: 1px;
   cursor: pointer;
   padding: 8px;
   border-radius: 50%;
-  border: 2px solid #7c7c7c;
+  border: 2px solid #8e8e8e;
   color: var(--white);
   font-size: calc(20 / 16 * 1rem);
   background-color: #201f1f;
   transition: all 0.3s ease;
 }
 
-.movie__info .movie__controls .movie__icons *:hover,
-.movie__controls .movie__info--button:hover {
+.card .movie__info .movie__controls .movie__icons *:hover,
+.card .movie__controls .movie__info--button:hover {
   border: 2px solid var(--white);
 }
 
-.movie__info .movie__title {
+.card .movie__info .movie__title {
   font-size: 1rem;
   margin: 10px 0;
 }
 
-.movie__info .movie__rate {
+.card .movie__info .movie__rate {
   color: var(--green);
   font-weight: 600;
   font-size: 0.8rem;
+}
+
+/* UPCOMING */
+.card .card__poster.up-coming {
+  width: 300px;
+}
+
+.card .movie__info.up-coming {
+  opacity: 0;
+  margin: -80px 0;
+  border-radius: 0;
+  transform: translateY(-80px);
+  transition: all 0.3s ease;
+  background: linear-gradient(#00000000, #111111);
+}
+
+.card.up-coming:hover {
+  box-shadow: 0 5px 10px black;
+}
+
+.card.up-coming:hover .movie__info.up-coming {
+  opacity: 1;
+}
+
+.card.up-coming:hover .card__poster.card__poster {
+  border-radius: 10px;
+}
+
+.card .movie__controls .movie__info--button,
+.card .movie__info .movie__controls .movie__icons.up-coming * {
+  background-color: #201f1fc8;
+}
+
+.card .movie__info .movie__rate {
+  margin-bottom: 10px;
 }
