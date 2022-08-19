@@ -14,8 +14,8 @@ export function RowContainer() {
         title="Netflix Original"
         fetchURL={Requests.requestPopular}
       />{" "}
-      <TopRated title="Top Rated" fetchURL={Requests.requestTopRated} />{" "}
       <UpComing title="Up Coming" fetchURL={Requests.requestUpComing} />
+      <TopRated title="Top Rated" fetchURL={Requests.requestTopRated} />{" "}
       <Romance title="Romance" fetchURL={Requests.requestRomance} />
       <Comedy title="Comedies" fetchURL={Requests.requestComedy} />
       <Action title="Action" fetchURL={Requests.requestAction} />{" "}

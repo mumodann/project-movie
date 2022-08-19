@@ -48,18 +48,17 @@ export function UpComing({ title, fetchURL }: UpComingProps) {
         </button>
         <div className="slider" ref={sliderRef}>
           {movies.map((item, id) => (
-            <div className="card">
+            <div className="card up-coming">
               <img
-                className="card__poster"
-                src={`https://image.tmdb.org/t/p/w500${item?.backdrop_path}`}
+                className="card__poster up-coming"
+                src={`https://image.tmdb.org/t/p/w500${item?.poster_path}`}
                 alt=""
                 key={id}
               />
-              <div className="movie__info">
-                <div className="movie__controls">
-                  <div className="movie__icons">
-                    <BsFillPlayFill /> <FiPlus /> <FiThumbsUp />{" "}
-                    <FiThumbsDown />
+              <div className="movie__info  up-coming">
+                <div className="movie__controls  up-coming">
+                  <div className="movie__icons up-coming">
+                    <BsFillPlayFill /> <FiPlus />
                   </div>
                   <div>
                     <button className="movie__info--button">
