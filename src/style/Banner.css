@@ -36,6 +36,8 @@
 .trailer__info {
   position: absolute;
   top: 40%;
+  z-index: 100;
+
   margin-left: 30px;
 }
 
@@ -107,11 +109,16 @@
   }
 
   .mute__button {
-    margin-top: -90px;
-    bottom: 0;
+    bottom: 100px;
     right: 0;
     left: 93%;
     position: sticky;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .mute__button {
+    bottom: 250px;
   }
 }
 
@@ -140,6 +147,7 @@
 
   .mute__button {
     padding: 8px;
+    bottom: 350px;
   }
 }
 
@@ -177,8 +185,8 @@
   .mute__button {
     font-size: calc(25 / 16 * 1rem);
     padding: 8px;
-    margin-top: -70px;
-    left: 93%;
+    bottom: 450px;
+    left: 90%;
   }
 }
 
@@ -194,8 +202,7 @@
   .mute__button {
     font-size: calc(23 / 16 * 1rem);
     padding: 8px;
-    margin-top: -75px;
-    left: 91%;
+    bottom: 550px;
   }
 }
 
@@ -234,7 +241,7 @@
   .mute__button {
     font-size: calc(22 / 16 * 1rem);
     padding: 6px;
-    margin-top: -70px;
+    bottom: 650px;
   }
 }
 
@@ -270,7 +277,7 @@
   .mute__button {
     font-size: calc(20 / 16 * 1rem);
     padding: 6px;
-    margin-top: -50px;
+    bottom: 680px;
   }
 }
 
@@ -307,6 +314,9 @@
   .mute__button {
     font-size: calc(18 / 16 * 1rem);
     padding: 4px;
-    left: 89%;
+
+    bottom: 700px;
+
+    left: 90%;
   }
 }
