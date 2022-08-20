@@ -46,7 +46,7 @@ export function UpComing({ title, fetchURL }: UpComingProps) {
         <button onClick={slideLeft} className="scroll__button scroll__left">
           <HiChevronLeft />{" "}
         </button>
-        <div className="slider" ref={sliderRef}>
+        <div className="slider up-coming" ref={sliderRef}>
           {movies.map((item, id) => (
             <div className="card up-coming">
               <img

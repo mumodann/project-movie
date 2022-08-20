@@ -1,3 +1,9 @@
+.RowContainer {
+  /* margin-top: 0px; */
+  background: var(--black);
+}
+
+/* BANNER */
 ::-webkit-scrollbar {
   display: none;
 }
@@ -5,7 +11,7 @@
 .row__title {
   letter-spacing: 1px;
   font-weight: 500;
-  padding: 50px 30px 10px 30px;
+  padding: 0px 30px 10px 30px;
   font-size: calc(24 / 16 * 1rem);
 }
 
@@ -13,7 +19,8 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 500;
-  padding: 30px 0 15px 30px;
+
+  padding: 0 0 15px 30px;
   font-size: calc(24 / 16 * 1rem);
 }
 
@@ -43,6 +50,7 @@
 }
 
 .movie__container .scroll__button {
+  display: flex;
   border: none;
   z-index: 100;
   cursor: pointer;
@@ -149,6 +157,10 @@
 }
 
 /* UPCOMING */
+.slider.up-coming {
+  margin-bottom: 30px;
+}
+
 .card .card__poster.up-coming {
   width: 300px;
 }
@@ -157,7 +169,7 @@
   opacity: 0;
   margin: -80px 0;
   border-radius: 0;
-  transform: translateY(-80px);
+  transform: translateY(-60px);
   transition: all 0.3s ease;
   background: linear-gradient(#00000000, #111111);
 }
@@ -181,4 +193,200 @@
 
 .card .movie__info .movie__rate {
   margin-bottom: 10px;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1630px) {
+  .row__title.Netflix {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .RowContainer {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card__poster {
+    width: 280px;
+  }
+
+  .card .movie__info .movie__controls .movie__icons * {
+    padding: 5px;
+    font-size: calc(30 / 16 * 1rem);
+  }
+
+  .card .movie__controls .movie__info--button {
+    padding: 6px;
+    font-size: calc(15 / 16 * 1rem);
+  }
+
+  .card .movie__info {
+    padding: 8px;
+    transform: translateY(-50px);
+  }
+
+  .card .movie__info .movie__title {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+
+  .card .movie__info .movie__rate {
+    margin-bottom: 5px;
+  }
+  /* UPCOMING */
+  .card .card__poster.up-coming {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card__poster {
+    width: 230px;
+  }
+
+  .card .movie__info .movie__controls .movie__icons * {
+    font-size: calc(29 / 16 * 1rem);
+  }
+
+  .card .movie__controls .movie__info--button {
+    font-size: calc(14 / 16 * 1rem);
+  }
+
+  .card .movie__info {
+    padding: 8px;
+    transform: translateY(-50px);
+  }
+
+  .card .movie__info .movie__title {
+    font-size: 0.9rem;
+    margin: 8px 0;
+  }
+
+  .card .movie__info .movie__rate {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+  }
+  /* UPCOMING */
+  .card .card__poster.up-coming {
+    width: 180px;
+  }
+
+  .row__title,
+  .row__title.Netflix {
+    font-size: calc(20 / 16 * 1rem);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card__poster {
+    width: 200px;
+  }
+
+  .card .movie__info .movie__title {
+    font-size: 0.8rem;
+  }
+
+  /* UPCOMING */
+  .card .card__poster.up-coming {
+    width: 160px;
+  }
+
+  .card .movie__info.up-coming {
+    transform: translateY(-50px);
+  }
+
+  .row__title,
+  .row__title.Netflix {
+    font-size: calc(20 / 16 * 1rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card__poster {
+    width: 180px;
+  }
+
+  .card .movie__info .movie__controls .movie__icons * {
+    font-size: calc(25 / 16 * 1rem);
+  }
+
+  .card .movie__controls .movie__info--button {
+    font-size: calc(10 / 16 * 1rem);
+  }
+
+  .card .movie__info .movie__title {
+    font-size: 0.8rem;
+    margin: 2px 0;
+  }
+
+  .card .movie__info .movie__rate {
+    font-size: 0.7rem;
+    margin: 2px 0 2px 0;
+  }
+
+  .card .movie__info {
+    padding: 8px;
+    transform: translateY(-35px);
+  }
+
+  /* UPCOMING */
+  .card .card__poster.up-coming {
+    width: 140px;
+  }
+
+  .card .movie__info.up-coming {
+    transform: translateY(-45px);
+  }
+
+  .row__title,
+  .row__title.Netflix {
+    font-size: calc(18 / 16 * 1rem);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .row__title {
+    padding: 10px 25px 10px 25px;
+  }
+
+  .row__title.Netflix {
+    padding: 0 0 15px 25px;
+  }
+
+  .movie__container {
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .movie__container .scroll__button * {
+    font-size: calc(30 / 16 * 1rem);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card__poster {
+    width: 130px;
+  }
+
+  .card .movie__info {
+    display: none;
+  }
+
+  /* UPCOMING */
+  .card .card__poster.up-coming {
+    width: 120px;
+  }
+
+  .card .movie__info.up-coming {
+    display: none;
+  }
+
+  .row__title,
+  .row__title.Netflix {
+    font-size: calc(16 / 16 * 1rem);
+  }
 }
