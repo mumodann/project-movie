@@ -1,5 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { BsBellFill } from "react-icons/bs";
+import { BiSearch } from "react-icons/bi";
+
 import "/src/style/Navbar.css";
 import { useState } from "react";
 
@@ -32,8 +33,8 @@ export function Navbar(): JSX.Element {
       />
 
       <aside className="nav__wrapper">
-        <FontAwesomeIcon icon={faMagnifyingGlass} className="wrapper__icon" />
-        <FontAwesomeIcon icon={faBell} className="wrapper__icon" />
+        <BiSearch className="wrapper__icon" />
+        <BsBellFill className="wrapper__icon" />
 
         <img
           tabIndex={1}
