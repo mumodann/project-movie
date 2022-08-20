@@ -17,8 +17,8 @@ type TopRatedProps = {
 };
 
 export function TopRated({ title, fetchURL }: TopRatedProps) {
-  const sliderRef = useRef();
-  const [movies, setMovies] = useState([]);
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const [movies, setMovies] = useState<string[]>([]);
 
   const slideLeft = () => {
     let slider = sliderRef.current;
