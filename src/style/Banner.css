@@ -1,10 +1,12 @@
+/* BANNER */
+
 .Banner {
   overflow: hidden;
   position: relative;
 }
 
 .mute__button:hover {
-  background: rgba(255, 255, 255, 0.103);
+  background: rgba(255, 255, 255, 0.207);
 }
 
 .mute__button {
@@ -50,7 +52,19 @@
   margin-bottom: 20px;
 }
 
+.trailer__overview.mobile__view--1,
+.trailer__overview.mobile__view--2 {
+  display: none;
+}
+
+.trailer__container {
+  display: flex;
+}
+
 .container__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   border-radius: 4px;
   font-weight: 700;
@@ -68,11 +82,231 @@
   margin-right: 15px;
 }
 
+.container__button:nth-child(2) {
+  cursor: pointer;
+}
+
 .container__button:first-child .icon {
   font-size: calc(14 / 16 * 1rem);
+}
+
+.container__button:nth-child(2) .icon {
+  font-size: calc(18 / 16 * 1rem);
 }
 
 .container__button:nth-child(2) {
   color: var(--white);
   background: var(--see-thru);
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1630px) {
+  .trailer__info {
+    top: 35%;
+  }
+
+  .mute__button {
+    margin-top: -90px;
+    bottom: 0;
+    right: 0;
+    left: 93%;
+    position: sticky;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .trailer__info {
+    top: 25%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .trailer__info {
+    top: 25%;
+  }
+  .trailer__title {
+    font-size: calc(40 / 16 * 1rem);
+  }
+
+  .trailer__overview {
+    font-size: calc(18 / 16 * 1rem);
+  }
+
+  .container__button {
+    font-size: 0.9rem;
+    width: 120px;
+  }
+
+  .mute__button {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .trailer__info {
+    top: 20%;
+  }
+  .trailer__title {
+    line-height: 1.8;
+    font-size: calc(30 / 16 * 1rem);
+  }
+
+  .trailer__overview {
+    max-width: 700px;
+    font-size: calc(16 / 16 * 1rem);
+    margin-bottom: 20px;
+  }
+
+  .container__button {
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 11px 0;
+    font-size: 0.9rem;
+    width: 110px;
+  }
+
+  .container__button:first-child .icon {
+    font-size: calc(13 / 16 * 1rem);
+  }
+
+  .container__button:nth-child(2) .icon {
+    font-size: calc(16 / 16 * 1rem);
+  }
+
+  .mute__button {
+    font-size: calc(25 / 16 * 1rem);
+    padding: 8px;
+    margin-top: -70px;
+    left: 93%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .trailer__info {
+    top: 15%;
+  }
+
+  .trailer__overview {
+    max-width: 600px;
+  }
+
+  .mute__button {
+    font-size: calc(23 / 16 * 1rem);
+    padding: 8px;
+    margin-top: -75px;
+    left: 91%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .trailer__title {
+    font-size: calc(28 / 16 * 1rem);
+  }
+
+  .trailer__info {
+    top: 10%;
+  }
+
+  .trailer__overview {
+    display: none;
+  }
+  .trailer__overview.mobile__view--1 {
+    display: flex;
+    width: 500px;
+  }
+
+  .container__button {
+    border-radius: 3px;
+    padding: 10px 0;
+    font-size: 0.8rem;
+    width: 100px;
+  }
+
+  .container__button:first-child .icon {
+    font-size: calc(12 / 16 * 1rem);
+  }
+
+  .container__button:nth-child(2) .icon {
+    font-size: calc(14 / 16 * 1rem);
+  }
+
+  .mute__button {
+    font-size: calc(22 / 16 * 1rem);
+    padding: 6px;
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .trailer__info {
+    margin-left: 20px;
+  }
+
+  .trailer__title {
+    font-size: calc(22 / 16 * 1rem);
+  }
+
+  .trailer__info {
+    top: 8%;
+  }
+
+  .trailer__overview.mobile__view--1 {
+    max-width: 400px;
+    font-size: calc(14 / 16 * 1rem);
+  }
+
+  .container__button {
+    border-radius: 3px;
+    padding: 9px 0;
+    font-size: 0.7rem;
+    width: 90px;
+  }
+
+  .container__button:first-child .icon {
+    font-size: calc(11 / 16 * 1rem);
+  }
+
+  .mute__button {
+    font-size: calc(20 / 16 * 1rem);
+    padding: 6px;
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .trailer__title {
+    font-size: calc(20 / 16 * 1rem);
+    line-height: 1.5;
+  }
+
+  .trailer__info {
+    top: 8%;
+  }
+
+  .trailer__overview.mobile__view--1 {
+    display: none;
+  }
+
+  .trailer__overview.mobile__view--2 {
+    display: flex;
+    width: 330px;
+    font-size: calc(14 / 16 * 1rem);
+    margin-bottom: 10px;
+  }
+
+  .container__button {
+    font-size: 0.7rem;
+    width: 80px;
+  }
+
+  .container__button:first-child .icon {
+    font-size: calc(9 / 16 * 1rem);
+  }
+
+  .mute__button {
+    font-size: calc(18 / 16 * 1rem);
+    padding: 4px;
+    left: 89%;
+  }
 }
