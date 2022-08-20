@@ -5,7 +5,7 @@ import "/src/style/Navbar.css";
 import { useState } from "react";
 
 export function Navbar(): JSX.Element {
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState<boolean>(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 50) {

@@ -7,7 +7,7 @@ import ReactPlayer from "react-player";
 import { BiInfoCircle } from "react-icons/bi";
 
 export function Banner(): JSX.Element {
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState<boolean>(true);
   return (
     <div className="banner">
       <ReactPlayer

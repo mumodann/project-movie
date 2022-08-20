@@ -1,7 +1,7 @@
 import { TbBrandInstagram, TbBrandGithub, TbBrandTiktok } from "react-icons/tb";
 import "/src/style/Footer.css";
 
-export function Footer() {
+export function Footer(): JSX.Element {
   return (
     <footer>
       Build by{" "}
