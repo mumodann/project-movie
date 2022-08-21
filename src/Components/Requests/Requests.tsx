@@ -1,5 +1,5 @@
 export const Requests = {
-  requestPopular: `https://api.themoviedb.org/3/discover/tv?api_key=${
+  requestNetflixOriginal: `https://api.themoviedb.org/3/discover/tv?api_key=${
     import.meta.env.VITE_MOVIE_API
   }&with_networks=213`,
   requestTopRated: `https://api.themoviedb.org/3/movie/top_rated?api_key=${
