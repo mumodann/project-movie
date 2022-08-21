@@ -1,7 +1,7 @@
 export const Requests = {
-  requestPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${
+  requestPopular: `https://api.themoviedb.org/3/discover/tv?api_key=${
     import.meta.env.VITE_MOVIE_API
-  }&language=en-US&page=1`,
+  }&with_networks=213`,
   requestTopRated: `https://api.themoviedb.org/3/movie/top_rated?api_key=${
     import.meta.env.VITE_MOVIE_API
   }&language=en-US&page=1`,
