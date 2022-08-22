@@ -1,13 +1,12 @@
-import { Navbar, RowContainer, Banner, Footer, FadeIn } from "./Components";
+import { Navbar, RowContainer, Banner, Footer } from "./Components";
 
 function App() {
   return (
     <>
       <Navbar />
       <Banner />
-      {/* <FadeIn />
       <RowContainer />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
