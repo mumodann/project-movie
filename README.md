@@ -1,5 +1,5 @@
 # Netflix Clone
-**Live Demo:** netflix-mirayatech.vercel.app
+**Live Demo:**  https://netflix-mirayatech.vercel.app/
 
 
 ## Dependencies 🛠️
