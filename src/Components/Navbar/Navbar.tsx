@@ -38,7 +38,7 @@ export function Navbar(): JSX.Element {
 
         <img
           tabIndex={1}
-          src="/src/Components/Assets/image/avatar.jpg"
+          src="http://zoeice.com/assets/img/uploads/profile.png"
           alt="Avatar"
           className="wrapper__avatar"
         />
