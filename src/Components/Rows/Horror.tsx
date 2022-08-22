@@ -16,7 +16,7 @@ type HorrorProps = {
 };
 
 export function Horror({ title, fetchURL }: HorrorProps) {
-  const sliderRef = useRef<HTMLDivElement>(null);
+  const sliderRef = useRef<any>(null);
   const [movies, setMovies] = useState<
     {
       title: string;

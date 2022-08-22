@@ -16,7 +16,7 @@ type RomanceProps = {
 };
 
 export function Romance({ title, fetchURL }: RomanceProps) {
-  const sliderRef = useRef<HTMLDivElement>(null);
+  const sliderRef = useRef<any>(null);
   const [movies, setMovies] = useState<
     {
       title: string;

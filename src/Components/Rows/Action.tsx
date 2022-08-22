@@ -16,7 +16,7 @@ type ActionProps = {
 };
 
 export function Action({ title, fetchURL }: ActionProps) {
-  const sliderRef = useRef<HTMLDivElement>(null);
+  const sliderRef = useRef<any>(null);
   const [movies, setMovies] = useState<
     {
       title: string;

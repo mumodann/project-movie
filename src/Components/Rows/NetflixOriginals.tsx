@@ -11,7 +11,7 @@ type NetflixOriginalProps = {
 };
 
 export function NetflixOriginals({ title, fetchURL }: NetflixOriginalProps) {
-  const sliderRef = useRef<HTMLDivElement>(null);
+  const sliderRef = useRef<any>(null);
   const [movies, setMovies] = useState<
     {
       original_name: string;

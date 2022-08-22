@@ -16,7 +16,7 @@ type UpComingProps = {
 };
 
 export function UpComing({ title, fetchURL }: UpComingProps) {
-  const sliderRef = useRef<HTMLDivElement>(null);
+  const sliderRef = useRef<any>(null);
   const [movies, setMovies] = useState<
     {
       title: string;
