@@ -27,7 +27,7 @@ export function Navbar(): JSX.Element {
 
       <img
         tabIndex={1}
-        src="/src/Components/Assets/image/logo.png"
+        src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-N-Symbol-logo-red-transparent-RGB-png.png"
         alt="Netflix mobile logo"
         className="nav__log--mobile"
       />
