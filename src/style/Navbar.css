@@ -6,7 +6,7 @@
   justify-content: space-between;
   background: none;
   transition: all 0.3s ease;
-  padding: 15px 3rem;
+  padding: 20px 3rem;
 }
 
 .nav.active {
@@ -91,7 +91,7 @@
 
 @media screen and (max-width: 540px) {
   .nav {
-    padding: 15px 2rem;
+    padding: 8px 2rem;
   }
   .nav__log--mobile {
     width: 32px;

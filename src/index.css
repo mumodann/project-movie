@@ -3,7 +3,6 @@
 @import url("./style/Banner.css");
 @import url("./style/Footer.css");
 @import url("./style/Rows.css");
-@import url("./style/FadeIn.css");
 
 :root {
   --white: #fff;
