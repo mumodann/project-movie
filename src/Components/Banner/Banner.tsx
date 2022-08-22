@@ -18,7 +18,7 @@ export function Banner(): JSX.Element {
         className="trailer__video"
         width="100%"
         height="100%"
-        url="/src/Components/Assets/video/trailerr.mp4"
+        url="https://vimeo.com/329866666"
       />
 
       {isMuted ? (

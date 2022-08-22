@@ -5,9 +5,9 @@ function App() {
     <>
       <Navbar />
       <Banner />
-      <FadeIn />
+      {/* <FadeIn />
       <RowContainer />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
