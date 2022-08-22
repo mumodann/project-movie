@@ -20,7 +20,7 @@ export function Navbar(): JSX.Element {
     <nav className={navbar ? "nav active" : "nav"}>
       <img
         tabIndex={1}
-        src="/src/Components/Assets/image/Netflix.svg"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
         alt="Netflix logo"
         className="nav__logo"
       />
