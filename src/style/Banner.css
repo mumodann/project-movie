@@ -38,7 +38,7 @@
   top: 40%;
   z-index: 100;
 
-  margin-left: 30px;
+  margin-left: 2.9rem;
 }
 
 .trailer__title {
@@ -247,7 +247,7 @@
 
 @media screen and (max-width: 540px) {
   .trailer__info {
-    margin-left: 20px;
+    margin-left: 2rem;
   }
 
   .trailer__title {
@@ -312,11 +312,12 @@
   }
 
   .mute__button {
-    font-size: calc(18 / 16 * 1rem);
-    padding: 4px;
+    display: none;
+  }
+}
 
-    bottom: 670px;
-
-    left: 90%;
+@media screen and (max-width: 370px) {
+  .trailer__overview.mobile__view--2 {
+    width: 300px;
   }
 }
