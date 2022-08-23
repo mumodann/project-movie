@@ -1,11 +1,12 @@
 # Netflix Clone
 **Live Demo:**  https://netflix-mirayatech.vercel.app/
 
+
+
 ## What I learned 🧠
+
+* How to mute and unmute video with a button
 * How to create a TypeScript-based React app using Vite
-
-
-
 
 
 ## Dependencies 🛠️
