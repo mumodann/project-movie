@@ -1,6 +1,12 @@
 # Netflix Clone
 **Live Demo:**  https://netflix-mirayatech.vercel.app/
 
+## What I learned 🧠
+* How to create a TypeScript-based React app using Vite
+
+
+
+
 
 ## Dependencies 🛠️
 
