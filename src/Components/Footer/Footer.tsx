@@ -9,14 +9,8 @@ export function Footer(): JSX.Element {
         Miraya
       </a>
       <div className="social-media">
-        <a href="https://github.com/mirayatech" target="_blank">
+        <a href="https://github.com/mumodann" target="_blank">
           <TbBrandGithub />
-        </a>
-        <a href="https://www.instagram.com/mirayatech/" target="_blank">
-          <TbBrandInstagram />
-        </a>
-        <a href="https://www.tiktok.com/@mirayatech" target="_blank">
-          <TbBrandTiktok />
         </a>
       </div>
     </footer>
