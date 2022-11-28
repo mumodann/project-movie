@@ -5,7 +5,7 @@ export function Footer(): JSX.Element {
   return (
     <footer>
       Build by{" "}
-      <a target="_blank" href="https://github.com/mirayatech">
+      <a target="_blank" href="https://github.com/mumodann">
         Miraya
       </a>
       <div className="social-media">
